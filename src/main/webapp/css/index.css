@@ -1,0 +1,56 @@
+@page {
+  size: A4;
+  margin: 0.25in;
+  -fs-flow-top: "header";
+  -fs-flow-bottom: "footer";
+  -fs-flow-left: "left";
+  -fs-flow-right: "right";
+  border: thin solid black;
+  padding: 1em;
+  height: 100%;
+  min-height: 100%;
+}
+
+#header {
+  font: bold serif;
+  position: absolute;
+  -fs-move-to-flow: "header";
+}
+
+@media print {
+  #pagenumber:before {
+    content: counter(page);
+  }
+  #pagecount:before {
+    content: counter(pages);
+  }
+}
+
+h1 {
+  padding-top: 20px;
+}
+h3 {
+  border: 1px solid #aaaaff;
+  background: #ccccff;
+  padding: 1em;
+  text-transform: capitalize;
+  font-family: sansserif;
+  font-weight: normal;
+}
+
+p {
+  margin: 1em 1em 4em 3em;
+}
+
+p:first-letter {
+  color: red;
+  font-size: 150%;
+}
+
+h2 {
+  background: #5555ff;
+  color: white;
+  border: 10px solid black;
+  padding: 3em;
+  font-size: 200%;
+}
