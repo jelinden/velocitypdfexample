@@ -12,5 +12,5 @@ cd velocitypdfexample<br/>
 mvn jetty:run
 
 go to:<br/>
-<a href="http://localhost:8080/velocitypdfexample/index.html>html</a><br/>
+<a href="http://localhost:8080/velocitypdfexample/index.html">html</a><br/>
 <a href="http://localhost:8080/velocitypdfexample/index.pdf">pdf</a>
