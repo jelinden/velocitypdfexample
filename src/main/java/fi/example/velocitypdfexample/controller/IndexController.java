@@ -38,10 +38,11 @@ public class IndexController {
 		model.addAttribute("greeting", "greeting value");
 		return "index";
 	}
+	
 	@RequestMapping("/index.pdf")
 	public void indexPageAsPdf(HttpServletRequest request, HttpServletResponse response, Model model) throws IOException, DocumentException {
     ITextRenderer renderer = new ITextRenderer();
-    renderer.setDocument(getDocument(), "http://localhost:8080/velocitypdfexample/");
+    renderer.setDocument(getDocument(), request.getRequestURL().toString());
     renderer.layout();
     OutputStream out = response.getOutputStream();
     renderer.createPDF(out);
