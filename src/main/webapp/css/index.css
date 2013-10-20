@@ -15,6 +15,7 @@
   font: bold serif;
   position: absolute;
   -fs-move-to-flow: "header";
+  color: gray;
 }
 
 @media print {
@@ -29,6 +30,7 @@
 h1 {
   padding-top: 20px;
 }
+
 h3 {
   border: 1px solid #aaaaff;
   background: #ccccff;
@@ -53,4 +55,15 @@ h2 {
   border: 10px solid black;
   padding: 3em;
   font-size: 200%;
+}
+
+.besideimage {
+  width: 430px;
+  position: relative;
+}
+
+.figure {
+  position: absolute;
+  margin-left: 500px;
+  top: 130px;
 }

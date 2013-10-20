@@ -49,6 +49,10 @@
     <servlet-name>static</servlet-name>
     <url-pattern>*.js</url-pattern>
   </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>static</servlet-name>
+    <url-pattern>*.jpg</url-pattern>
+  </servlet-mapping>
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>
